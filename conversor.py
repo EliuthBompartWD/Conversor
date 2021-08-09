@@ -29,7 +29,9 @@ euro_blue = response_json["blue_euro"]
 date = response_json["last_update"]
 
 def conversor(moneda,operacion,precio):
-    
+    print("\n")
+    print("Fecha de actualizacion del precio:",date)
+    print("\n")
     if operacion == "comprar":
         dinero = round(float(input(f"¿Cuantos {moneda} quieres {operacion}? ")),2)
         result =  dinero * precio
