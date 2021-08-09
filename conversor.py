@@ -45,24 +45,21 @@ def conversor(moneda,operacion,precio):
         result = "$" + x + " pesos"
         return result
 
-if response.status_code == 200:
-    if accion == "1":
+if accion == "1":
         print(conversor("Dólares","comprar",dolar_blue["value_sell"]))
-    elif accion == "2":
+elif accion == "2":
         print(conversor("Dólares","vender",dolar_blue["value_buy"]))
-    elif accion == "3":
+elif accion == "3":
         print(conversor("Euros","comprar",euro_blue["value_sell"]))
-    elif accion == "4":
+elif accion == "4":
         print(conversor("Euros","vender",euro_blue["value_buy"]))
-    elif accion == "5":
+elif accion == "5":
         print(conversor("Dólar","precio",dolar_blue["value_avg"]))
-    elif accion == "6":
+elif accion == "6":
         print(conversor("Dólar","precio",dolar_oficial["value_avg"]))
-    elif accion == "7":
+elif accion == "7":
        print(conversor("Euro","precio",euro_blue["value_avg"]))
-    elif accion == "8":
+elif accion == "8":
         print(conversor("Euro","precio",euro_oficial["value_avg"]))
-    else:
-        print("Debes seleccionar algunas de las opciones para poder continuar")
 else:
-    print("No se pudo acceder a la API correctamente")
+        print("Debes seleccionar algunas de las opciones para poder continuar")
