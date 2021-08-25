@@ -16,8 +16,6 @@ Precio | Compra | Venta
 
 ### Usabilidad.
 
-Este proyecto lo desarrolle en Python y en Javascript. <br>
-Para acceder a su version de navegador [haz click aquí.]() <br>
-Para Python puedes clonar el repositorio y probarlo :D.
+Este proyecto lo desarrolle en Python. <br>
 
 
